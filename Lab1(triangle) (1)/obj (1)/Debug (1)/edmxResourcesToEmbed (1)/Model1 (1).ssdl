@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Test_triangleModel" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Date_tiangle">
+    <Key>
+      <PropertyRef Name="ID_triangle" />
+    </Key>
+    <Property Name="ID_triangle" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="input1" Type="nvarchar" MaxLength="100" />
+    <Property Name="input2" Type="nvarchar" MaxLength="100" />
+    <Property Name="input3" Type="nvarchar" MaxLength="100" />
+    <Property Name="Type_triangle" Type="nvarchar" MaxLength="30" />
+    <Property Name="Error" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="Хранилище Test_triangleModelContainer">
+    <EntitySet Name="Date_tiangle" EntityType="Self.Date_tiangle" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

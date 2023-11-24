@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Test_triangleModelContainer" CdmEntityContainer="Test_triangleEntities">
+    <EntitySetMapping Name="Date_tiangle">
+      <EntityTypeMapping TypeName="Test_triangleModel.Date_tiangle">
+        <MappingFragment StoreEntitySet="Date_tiangle">
+          <ScalarProperty Name="ID_triangle" ColumnName="ID_triangle" />
+          <ScalarProperty Name="input1" ColumnName="input1" />
+          <ScalarProperty Name="input2" ColumnName="input2" />
+          <ScalarProperty Name="input3" ColumnName="input3" />
+          <ScalarProperty Name="Type_triangle" ColumnName="Type_triangle" />
+          <ScalarProperty Name="Error" ColumnName="Error" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

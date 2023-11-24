@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище Test_triangleModel" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Date_tiangle">
+          <Key>
+            <PropertyRef Name="ID_triangle" />
+          </Key>
+          <Property Name="ID_triangle" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="input1" Type="nvarchar" MaxLength="100" />
+          <Property Name="input2" Type="nvarchar" MaxLength="100" />
+          <Property Name="input3" Type="nvarchar" MaxLength="100" />
+          <Property Name="Type_triangle" Type="nvarchar" MaxLength="30" />
+          <Property Name="Error" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityContainer Name="Хранилище Test_triangleModelContainer">
+          <EntitySet Name="Date_tiangle" EntityType="Self.Date_tiangle" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Test_triangleModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Date_tiangle">
+          <Key>
+            <PropertyRef Name="ID_triangle" />
+          </Key>
+          <Property Name="ID_triangle" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="input1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="input2" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="input3" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Type_triangle" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Error" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="Test_triangleEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Date_tiangle" EntityType="Self.Date_tiangle" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище Test_triangleModelContainer" CdmEntityContainer="Test_triangleEntities">
+          <EntitySetMapping Name="Date_tiangle">
+            <EntityTypeMapping TypeName="Test_triangleModel.Date_tiangle">
+              <MappingFragment StoreEntitySet="Date_tiangle">
+                <ScalarProperty Name="ID_triangle" ColumnName="ID_triangle" />
+                <ScalarProperty Name="input1" ColumnName="input1" />
+                <ScalarProperty Name="input2" ColumnName="input2" />
+                <ScalarProperty Name="input3" ColumnName="input3" />
+                <ScalarProperty Name="Type_triangle" ColumnName="Type_triangle" />
+                <ScalarProperty Name="Error" ColumnName="Error" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

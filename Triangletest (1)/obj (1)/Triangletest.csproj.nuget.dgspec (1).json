@@ -1,0 +1,86 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\dvilli\\source\\repos\\Lab1(triangle)\\Triangletest\\Triangletest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dvilli\\source\\repos\\Lab1(triangle)\\Lab1(triangle)\\Lab1(triangle).csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dvilli\\source\\repos\\Lab1(triangle)\\Lab1(triangle)\\Lab1(triangle).csproj",
+        "projectName": "Lab1(triangle)",
+        "projectPath": "C:\\Users\\dvilli\\source\\repos\\Lab1(triangle)\\Lab1(triangle)\\Lab1(triangle).csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\dvilli\\source\\repos\\Lab1(triangle)\\Triangletest\\Triangletest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dvilli\\source\\repos\\Lab1(triangle)\\Triangletest\\Triangletest.csproj",
+        "projectName": "Triangletest",
+        "projectPath": "C:\\Users\\dvilli\\source\\repos\\Lab1(triangle)\\Triangletest\\Triangletest.csproj",
+        "packagesPath": "C:\\Users\\dvilli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dvilli\\source\\repos\\Lab1(triangle)\\Triangletest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dvilli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\dvilli\\source\\repos\\Lab1(triangle)\\Lab1(triangle)\\Lab1(triangle).csproj": {
+                "projectPath": "C:\\Users\\dvilli\\source\\repos\\Lab1(triangle)\\Lab1(triangle)\\Lab1(triangle).csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.16.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

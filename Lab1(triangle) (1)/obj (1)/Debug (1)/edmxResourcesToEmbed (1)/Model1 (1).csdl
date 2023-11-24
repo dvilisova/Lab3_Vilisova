@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Test_triangleModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Date_tiangle">
+    <Key>
+      <PropertyRef Name="ID_triangle" />
+    </Key>
+    <Property Name="ID_triangle" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="input1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="input2" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="input3" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Type_triangle" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Error" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="Test_triangleEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Date_tiangle" EntityType="Self.Date_tiangle" />
+  </EntityContainer>
+</Schema>
